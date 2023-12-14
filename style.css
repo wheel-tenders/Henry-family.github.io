@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Merriweather';
+    text-align: center;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: darkblue;
+    position: fixed;
+}
+.logo{
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 100px;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Merriweather';
+    color: white;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+    letter-spacing: 4px;
+}
+.logo a:hover{
+    text-decoration: underline red;
+    text-underline-offset: 7px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+nav{
+    float: right;
+    line-height: 100px;
+}
+.nav-a{
+    text-decoration: none;
+    font-family: 'Merriweather';
+    letter-spacing: 1px;
+    font-size: 13px;
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black;
+    padding: 18px 10px;
+    margin: 0;
+}
+
+.nav-a:hover {
+    text-decoration: underline red;
+    text-underline-offset: 7px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.banner-area{
+    background-image: url(images/usa-flag.jpg);
+    background-size: cover;
+    background-position: center center;
+    top: 100px;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.banner-area::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: darkblue;
+    opacity: 0.7;
+    z-index: -1;
+}
+   
+.banner-area h1{
+    padding-top: 8%;
+    font-size: 80px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;}
+.banner-area p{
+    padding-top: 8%;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+div img{
+    size: fill;
+    padding-bottom: 0;
+}
+.picture-tree{
+    transition: transform .5s ease-in-out;
+}
+.picture-tree:hover {
+    -ms-transform: scale(1.25); /* IE 9 */
+    -webkit-transform: scale(1.25); /* Safari 3-8 */
+    transform: scale(1.25); 
+}
+
+.fam-interview-content{
+    background-color: grey;
+    background-size: cover;
+    background-position: center center;
+    top: 100px;
+    height: 100%;
+    width: 100%;
+}
+.fam-interview-content::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: darkblue;
+    opacity: 0.7;
+    z-index: -1;
+}
+.fam-interview-content h2{
+    padding-top: 8%;
+    font-size: 80px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.fam-interview-content p{
+    padding-top: 8%;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.imgs{
+    height: 500px;
+    width: 500px;
+}
